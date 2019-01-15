@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#datetime {
+  position: relative;
+}
+#icon_imgcalendar {
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 13px;
+  height: 20px;
+}
+#table__date__row1 {
+  background: #a9cce3;
+  line-height: 0.25;
+  color: #2e86c1;
+}
+#table__date {
+  visibility: collapse;
+  width: 405px;
+  text-align: center;
+  border: 1px solid #000;
+  background: #000;
+}
+#table__date tr {
+  height: 30px;
+}
+#table__date tr td{
+  width: 58px;
+  border: 1px solid #fff;
+}
+#table__date tr td:hover {
+  color: red;
+  cursor: pointer;
+}
+#cbo__month {
+  height: 30px;
+  width: 100%;
+}
+#cbo__year {
+  height: 30px;
+  width: 100%;
+}
+#day__name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ff0000;
+  background: #bebebe;
+}

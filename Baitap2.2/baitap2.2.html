@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="stylecss/baitap2.2.css">
+  <link rel="stylesheet" type="text/css" href="stylecss/baitap2.1.css">
+  <script src="javascript/baitap2.2.js"></script>
+  <script src="javascript/baitap2.1.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="form__login">
+   <label class="label__info">Username</label>
+   <input type="text" class="input__text" id="username">
+   <span class="error" class="error" id="user__error"></span>
+</div>
+<div class="form__login">
+  <label class="label__info">Password</label>
+  <input type="password" class="input__text" id="password">
+  <span class="error" id="pass__error"></span>
+</div>
+<div class="form__login">
+  <label class="label__info">Email</label>
+  <input type="text" class="input__text" id="email">
+  <span class="error" id="email__error"></span>
+</div>
+<div class="form__login">
+  <label class="label__info">Birthday</label>
+  <input  readonly type="text" class="input__text" id="birthday" maxlength="10"  onclick="createCalender()"/>
+  <img  id="icon_imgcalendar" src="images/png_calendar.png">
+  <span class="error" id="birth__error"></span>
+  <table id="table__date">
+    <tr id="table__date__row1">
+      <td onclick="giamNam()">&#8592;<br/>&#8592;</td>
+      <td onclick="giamThang()">&#8592;</td>
+      <td colspan="2">
+        <select id="cbo__month" onchange="selectMonthAndYearChange()">
+        </select>
+      </td>
+      <td>
+        <select id="cbo__year" onchange="selectMonthAndYearChange()">
+        </select>
+      </td>
+      <td onclick="tangThang()">&#8594;</td>
+      <td onclick="tangNam()">&#8594;<br/>&#8594;</td>
+    </tr>
+    <tr id="day__name">
+      <td>Sun</td>
+      <td>Mon</td>
+      <td>Tue</td>
+      <td>Web</td>
+      <td>Thu</td>
+      <td>Fri</td>
+      <td>Sat</td>
+    </tr>
+  </table>
+</div>
+  <button type="button" class="btn-submit btn-primary" onclick="checkInput()">Submit</button>
+  <button type="button" class="btn-primary" onclick="reSetText()">Refresh</button>
+</div>
+</body>
+</html>
